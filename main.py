@@ -11,9 +11,9 @@ class MainWindow(Qt.QWidget):
         
         MainLayout = Qt.QHBoxLayout(self)
         Content = Qt.QVBoxLayout(self)
-        MainLayout.addLayout(Content)
-        self.nav_bar = NavBar()
+
         MainLayout.addWidget(NavBar())
+        MainLayout.addLayout(Content)
         Content.addWidget(Title)
         self.showMaximized()
 
